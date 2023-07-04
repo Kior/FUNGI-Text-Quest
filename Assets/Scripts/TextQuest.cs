@@ -11,7 +11,6 @@ public class TextQuest : MonoBehaviour
     public TMP_Text LocationNameText;
     public TMP_Text InstructionsText;
     
-    //public Image BackgroundSprite;
     public Image LevelSprite;
 
     public Level StartLevel;
@@ -31,8 +30,6 @@ public class TextQuest : MonoBehaviour
 
     private void Start()
     {
-        // DescriptionText.text = StartLevel.Description;
-        // AnswerText.text = StartLevel.Answers;
         _currentLevel = StartLevel;
         UpdateUi();
     }
@@ -47,26 +44,6 @@ public class TextQuest : MonoBehaviour
                 UpdateUi();
             }
         }
-        // if (IsNextLevelExist(0) && Input.GetKeyDown(KeyCode.Alpha1))
-        // {
-        //     _currentLevel = GetNextLevel(0);
-        //     UpdateUi();
-        // }
-        // else if (IsNextLevelExist(1) && Input.GetKeyDown(KeyCode.Alpha2))
-        // {
-        //     _currentLevel = GetNextLevel(1);
-        //     UpdateUi();
-        // }
-        // else if (IsNextLevelExist(2) && Input.GetKeyDown(KeyCode.Alpha3))
-        // {
-        //     _currentLevel = GetNextLevel(2);
-        //     UpdateUi();
-        // }
-        // else if (IsNextLevelExist(3) && Input.GetKeyDown(KeyCode.Alpha4))
-        // {
-        //     _currentLevel = GetNextLevel(3);
-        //     UpdateUi();
-        // } на память :)
     }
 
     #endregion
